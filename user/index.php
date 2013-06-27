@@ -53,7 +53,7 @@ class index extends PageUser{
                     
         foreach ($result as $res){
             printf("<div><a href='../class/editnews.php?id=%s&lang=%s'>%s</a> ",$res['news_id'],$res['news_lang'],$res['news_title']);            
-            echo "<a href='../class/deletenews.php?id={$res['news_id']}&lang={$lang}'>"._('Delete')."</a></div>";
+            echo "<a class='delete' href='../class/deletenews.php?id={$res['news_id']}&lang={$lang}'>"._('Delete')."</a></div>";
         }
     }
     

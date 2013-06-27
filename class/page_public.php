@@ -54,6 +54,7 @@ class Page_public extends Dataproc{
         ?>
         <div id="nav">
                 <ul>
+                    <li><a href="../index.php"><?echo _("Home")?></a> </li>
                     <li><a href="user/index.php"><?echo _("Administration")?></a> </li>
                     <li><a href="registration_form.php"><?echo _("Registration_form")?></a> </li>
                     

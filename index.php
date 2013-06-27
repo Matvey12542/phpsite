@@ -78,9 +78,25 @@ class index extends Page_public{
 		
         foreach ($result as $res){
 			$res['news_date'] = substr($res['news_date'], 0, 10);
-            printf("<table class='news'><tr class='news_head'><td><p class='title'>%s</p>\n<p class='date'>%s</p></td></tr> <tr class='news_body'><td><p>%s</p></td></tr></table>",$res['news_title'],$res['news_date'],$res['news_text']);            
+                        $res['news_text'] = $this->obrezka($res['news_text']);
+            printf("<table class='news'><tr class='news_head'><td><p class='title'><a href='newsview.php?id=%s&lang=%s'>%s</a></p>\n
+                    <p class='date'>%s</p></td></tr> <tr class='news_body'><td><p>%s</p></td></tr></table>"
+                    ,$res['news_id'],$this->lang,$res['news_title'],$res['news_date'],$res['news_text']);
+            echo "<p class='read_more'><a href='newsview.php?id=".$res['news_id']."&lang=".$this->lang."'>"._("Read more")."</a></p>";
         }
     }
+    public function obrezka($str){
+        
+        if(strlen($str) <= 150) return $str
+                ;
+        $res =  mb_substr($str,0, 150,'UTF-8');        //ріжем від 0 до 150
+        $res =  mb_substr($res, 0, strrpos($res, ' ' ),'UTF-8');
+       
+        if ($res == $str)
+            return $res;
+        return $res." ...";
+    }
+    
 }
 
 $page = new index();

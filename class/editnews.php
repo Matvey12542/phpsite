@@ -31,7 +31,7 @@ class Edit extends PageUser{
         if(isset($_GET['id'])&&isset($_GET['lang']))
         {
             $id = (int)$_GET['id'];
-            $this->lang = htmlspecialchars($_GET['lang']);
+            $this->lang = mysql_real_escape_string($_GET['lang']);
         }else   {
             if(isset($_SESSION['mess'])){
                 echo _("News has been edit");

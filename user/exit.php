@@ -12,7 +12,7 @@ class ExitPage extends PageUser{
         //echo $_SESSION['login'];
         
         //$_SESSION['mess'] = _("Goodbye");
-        //header("Location:../index.php");
+        header("Location:../index.php");
         echo '</div>';
     }
      public function Left()

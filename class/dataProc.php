@@ -15,7 +15,7 @@ class Dataproc{
     {
         if (isset($_SESSION['lang']))
         {
-            $lang = addslashes($_SESSION['lang']);
+            $lang = mysql_real_escape_string($_SESSION['lang']);
 
         }else{
             $lang = "ru";    

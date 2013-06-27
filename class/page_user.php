@@ -160,7 +160,9 @@ class PageUser extends Dataproc {
         {
             $this->Header();
             $this->Left();
+            echo '<div id="content">'; 
             echo _("<a href='../index.php'>"._("Login or password is entered incorrectly.")."</a>");
+            echo '</div>';
             $this->Footer();
             //header("Location:../index.php");
             exit;

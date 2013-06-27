@@ -1,3 +1,10 @@
+/* 
+    Document   : style
+    Created on : 05.06.2013, 20:34:43
+    Author     : kolya
+    Description:
+        Purpose of the stylesheet follows.
+*/
 
 root { 
     display: block;
@@ -44,9 +51,9 @@ header.mainH {
 	text-align: right;
 	margin-right: 30px;
 }
-#main_title{
+#heder h3{
     
-    float: none;
+    
 }
 #nav{
     width: 300px;
@@ -78,39 +85,12 @@ header.mainH {
 }
 
 input{
-    /*height: 10px;*/
     width: 150px;
     font-size: 13px;
     padding: 6px 0 4px 10px;
     border: 1px solid #cecece;
     background: #f6f6f6;
     border-radius: 8px;
-}
-.submit {
-	cursor: pointer;
-	border: 1px solid #cecece;
-	background: #f6f6f6;
-	box-shadow: inset 0px 20px 20px #ffffff;
-	border-radius: 8px;
-	padding: 3px 5px;
-	width: 60px;
-        height: 20px;
-        font-size: 10px;
-}
-#form{
-    
-    width: 550px;
-    margin-left: 480px;
-    margin-top: 10px;
-    
-}
-#form p{
-    float: left;
-    margin:  10px 0 0 0;
-    padding: 0 3px;
-}
-#clear{
-    
 }
 .news{
     border: 1px solid black;
@@ -129,11 +109,11 @@ input{
     padding-left: 10px;
     color: #ac0202;
 }
-.title{
+#title{
     padding-bottom: 0;
     margin-bottom: 3px; 
 }
-.date{
+#date{
     padding: 0;
     margin: 0;
     color: #717171;
@@ -149,23 +129,4 @@ input{
 }
 #adm_news{
     float:left;
-}
-
-.read_more{
-    text-align: right;  
-    font-size: 12px;
-    
-}
-a{
-    text-decoration: none;
-    color: #215a91;
-}
-a:hover{
-    color: blue;
-}
-.linku{
-    margin: 0 10px;
-}
-.delete{
-    color: red;
 }
