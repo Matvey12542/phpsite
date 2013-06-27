@@ -39,7 +39,7 @@ class index extends Page_public{
                         unset($_SESSION['mess']);
                     } 
                 
-                    $this->ShowLoginForm();
+                    //$this->ShowLoginForm();
                 
                     echo '<p>';
                     $Counter = new UserOnline();
@@ -52,7 +52,7 @@ class index extends Page_public{
                     
         <?php
     }
-    private function ShowLoginForm()
+   /* private function ShowLoginForm()
     {
         if (isset($_SESSION['login']))
                   {
@@ -69,7 +69,7 @@ class index extends Page_public{
                             </table>
                     </form>
           <?php   }
-    }
+    }*/
     
     public function ShowNews($lang){
         $news = new NewsDb();
@@ -78,7 +78,7 @@ class index extends Page_public{
 		
         foreach ($result as $res){
 			$res['news_date'] = substr($res['news_date'], 0, 10);
-            printf("<table class='news'><tr class='news_head'><td><p id='title'>%s</p><p id='date'>%s</p></td></tr> <tr class='news_body'><td><p>%s</p></td></tr></table>",$res['news_title'],$res['news_date'],$res['news_text']);            
+            printf("<table class='news'><tr class='news_head'><td><p class='title'>%s</p>\n<p class='date'>%s</p></td></tr> <tr class='news_body'><td><p>%s</p></td></tr></table>",$res['news_title'],$res['news_date'],$res['news_text']);            
         }
     }
 }

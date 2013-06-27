@@ -26,24 +26,28 @@ class PageUser extends Dataproc {
     public function Header()
     {
         ?>
-        <!DOCTYPE html>
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
         <html>
             <head>
                 <title><?  echo _('Administrative page');?></title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-                <link rel="stylesheet" href="../style.css" />
+                <link rel="stylesheet" href="../style.css">
             </head>
 
             <body>
                 <div id="wraper">
                     <div id="header">
+                        <div id="form">
+                            <?$this->ShowLoginForm();?>
+                        </div>
                         <h3><?echo _('My first site using Object Oriented Programming')?></h3>
-						<div id="lang">
+                                                                           
+                            <div id="lang">
         <?//echo _('Hellow')."<br>";
-        echo "<a href='?lang=en'><img src='../images/us.png'> </a><br />";
-        echo "<a href='?lang=ru'><img src='../images/ru.png'> </a><br />";?>
-						</div>
-					</div>
+        echo "<a href='?lang=en'><img src='../images/us.png' alt='en'> </a><br>";
+        echo "<a href='?lang=ru'><img src='../images/ru.png' alt='ru'> </a><br>";?>
+                            </div>
+                    </div>
         <?php
     }
     
@@ -51,6 +55,15 @@ class PageUser extends Dataproc {
     {
         ?>
         <div id="nav">
+            
+                <?
+                if (isset($_SESSION['mess']))
+                    {
+                        echo "<br>".$_SESSION['mess'];
+                        unset($_SESSION['mess']);
+                    } 
+                
+                ?>
                 <ul>
                     <li><a href="../index.php"><?echo _("Home")?></a> </li>
                     <?
@@ -91,18 +104,17 @@ class PageUser extends Dataproc {
 
                 if(!empty($login)&&!empty($password)){
                 
-                try {
+
                     if($this->CheckLoginAndPasswd($login,$password))
                     {$_SESSION['login'] = $login;}
 					
 
-               } catch (Exception $exc) {
-                    echo $exc->getMessage();
-                    exit;
-                }}
+                }
                 
             else {
-                echo _("You enter the wrong login information.");
+                $_SESSION['mess'] = _("You enter the wrong login information.");
+                //header("Location:../user/index.php");
+                //echo _("You enter the wrong login information.");
 				
             }
             
@@ -134,8 +146,10 @@ class PageUser extends Dataproc {
             return true;
         }else{
             //throw new Exception(_("You enter the wrong login information."));
-            echo _("You enter the wrong login information.");
-			exit();
+            //echo _("You enter the wrong login information.");
+            $_SESSION['mess'] = _("You enter the wrong login information.");
+            header("Location:../user/index.php");
+			//exit();
             return false;
         }
     }
@@ -151,6 +165,27 @@ class PageUser extends Dataproc {
             //header("Location:../index.php");
             exit;
         }
+    }
+    protected function ShowLoginForm()
+    {
+        if (isset($_SESSION['login']))
+                  {
+                    echo '<a href="../user/exit.php">'._("Log out").'</a>';
+                  }
+                  else
+                  {
+          ?>
+                    <form action="../user/index.php" method="post">
+                            
+                              
+                                    <?echo _('login:')?><input type="text" name="user_login">
+                                    <?echo _('Password:')?><input type="password" name="user_pass">
+                                    <input type="submit" class="submit" value="<?echo _('Enter')?>" name="login_form">
+                                    
+                                
+                            
+                    </form>
+          <?php   }
     }
 }
 

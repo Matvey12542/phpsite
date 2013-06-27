@@ -42,7 +42,7 @@ class index extends PageUser{
             echo "<br>".$_SESSION['mess'];
             unset($_SESSION['mess']);
         }    
-            
+                        
         $this->ShowNews($this->lang);
         echo '</div>';
     }

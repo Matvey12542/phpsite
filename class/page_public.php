@@ -25,22 +25,25 @@ class Page_public extends Dataproc{
     public function Header()
     {
         ?>
-        <!DOCTYPE html>
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
         <html>
             <head>
                 <title><?  echo _('Administrative page');?></title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-                <link rel="stylesheet" href="style.css" />
+                <link rel="stylesheet" href="style.css">
             </head>
 
             <body>
                 <div id="wraper">
                     <div id="header">
-                        <h3><?echo _('My first site using Object Oriented Programming')?></h3>
+                        <div id="form">
+                            <?$this->ShowLoginForm();?>
+                        </div>
+                        <h3 id="main_title"><?echo _('My first site using Object Oriented Programming')?></h3>
 						<div id="lang">
 		<?//echo _('Hellow')."<br>";
-        echo "<a href='?lang=en'><img src='images/us.png' alt='ru'> </a><br />";
-        echo "<a href='?lang=ru'><img src='images/ru.png' alt='ru'> </a><br />";?>
+        echo "<a href='?lang=en'><img src='images/us.png' alt='ru'> </a><br>";
+        echo "<a href='?lang=ru'><img src='images/ru.png' alt='ru'> </a><br>";?>
 						</div>
                     </div>
         <?php
@@ -57,8 +60,10 @@ class Page_public extends Dataproc{
                 </ul>        
                 
                 <?  $Counter = new UserOnline();                        //???
-                    echo _('Users online- ').$Counter->getOnline();
-                    echo _('Users all- ').$Counter->getAll();
+                    echo '<div class="online">';
+                    echo '<p>'._('Users online- ').$Counter->getOnline().'</p>';
+                    echo '<p>'._('Users all- ').$Counter->getAll().'</p>';
+                    echo '</div>';
                 ?>
                 
                 
@@ -81,6 +86,27 @@ class Page_public extends Dataproc{
             </body>
         </html>
         <?php
+    }
+    protected function ShowLoginForm()
+    {
+        if (isset($_SESSION['login']))
+                  {
+                    echo '<a href="user/exit.php">'._("Log out").'</a>';
+                  }
+                  else
+                  {
+          ?>
+                    <form action="user/index.php" method="post">
+                            
+                              
+                                    <?echo _('login:')?><input type="text" name="user_login">
+                                    <?echo _('Password:')?><input type="password" name="user_pass">
+                                    <input type="submit" class="submit" value="<?echo _('Enter')?>" name="login_form">
+                                    
+                                
+                            
+                    </form>
+          <?php   }
     }
 }
 ?>
