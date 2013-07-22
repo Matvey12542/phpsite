@@ -63,7 +63,7 @@ class index extends PageUser{
             unset($_SESSION['mess']);
         }    
         
-        $this->ShowNews($this->lang);
+        $this->ShowNews($this->lang); 
         echo '</div>';
     }
     
