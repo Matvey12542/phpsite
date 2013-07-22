@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Matvey\n"
+"POT-Creation-Date: 2013-07-13 16:39+0300\n"
+"PO-Revision-Date: 2013-07-13 16:39+0300\n"
+"Last-Translator: Kolya <Matvey12542@rambler.ru>\n"
+"Language-Team: Matvey_team <Matvey12542@rambler.ru>\n"
+"Language: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ~\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: sites/shop/www\n"
+
+#: sites/shop/www/index.php:19 sites/shop/www/class/page_user.php:72
+msgid "News"
+msgstr "Новости"
+
+#: sites/shop/www/index.php:32 sites/shop/www/class/page_public.php:58
+msgid "Administration"
+msgstr "Админ страница"
+
+#: sites/shop/www/index.php:33 sites/shop/www/class/page_public.php:59
+msgid "Registration_form"
+msgstr "Форма регистрации"
+
+#: sites/shop/www/index.php:47
+msgid "User online- "
+msgstr "Пользователь онлайн-"
+
+#: sites/shop/www/index.php:48
+msgid "All User- "
+msgstr "Всех-"
+
+#: sites/shop/www/index.php:93
+msgid "Read more"
+msgstr "Читать далее"
+
+#: sites/shop/www/registration_form.php:11
+msgid "User registration"
+msgstr "Регистрация пользователя"
+
+#: sites/shop/www/registration_form.php:25
+msgid "Registration"
+msgstr "Регистрация"
+
+#: sites/shop/www/registration_form.php:29
+#: sites/shop/www/class/page_user.php:183
+#: sites/shop/www/class/page_public.php:103
+msgid "login:"
+msgstr "Логин"
+
+#: sites/shop/www/registration_form.php:30
+#: sites/shop/www/class/page_user.php:184
+#: sites/shop/www/class/page_public.php:104
+msgid "Password:"
+msgstr "Пароль"
+
+#: sites/shop/www/registration_form.php:31
+msgid "Password_repeat:"
+msgstr "Повторите пароль"
+
+#: sites/shop/www/registration_form.php:32
+msgid "Email:"
+msgstr "Email:"
+
+#: sites/shop/www/registration_form.php:33
+msgid "Name:"
+msgstr "имя"
+
+#: sites/shop/www/registration_form.php:34
+msgid "City:"
+msgstr "Город:"
+
+#: sites/shop/www/registration_form.php:35
+msgid "Registration:"
+msgstr "Регистрация"
+
+#: sites/shop/www/newsview.php:21
+msgid "Wrong data"
+msgstr "Неверные данные"
+
+#: sites/shop/www/newsview.php:26 sites/shop/www/class/editnews.php:77
+msgid "Edit"
+msgstr "Редактировать"
+
+#: sites/shop/www/newsview.php:27 sites/shop/www/user/index.php:74
+msgid "Delete"
+msgstr "Удалить"
+
+#: sites/shop/www/registration.php:28
+msgid "Passwords do not match"
+msgstr "Пароли не совпали"
+
+#: sites/shop/www/registration.php:29
+msgid "A username already exists"
+msgstr "Имя пользователя уже существует"
+
+#: sites/shop/www/registration.php:30 sites/shop/www/registration.php:31
+msgid "Not filled in all the fields"
+msgstr "Не заполнены все поля"
+
+#: sites/shop/www/registration.php:33
+msgid "<br /><a href=\"registration_form.php\">Registration form</a>"
+msgstr "<br /><a href=\"registration_form.php\">Форма регистрации</a>"
+
+#: sites/shop/www/index_s.php:23
+msgid "Such a user is already present. <br>"
+msgstr "Такой пользователь уже присутствует. <br>"
+
+#: sites/shop/www/index_s.php:35
+msgid "registration is successful"
+msgstr "Регистрация успешна"
+
+#: sites/shop/www/index_s.php:43
+msgid "<b> <font color=red> Login successful </font> </b>"
+msgstr "<b><font color=red>Вход удачен </font></b>"
+
+#: sites/shop/www/user/index.php:33 sites/shop/www/user/exit.php:25
+#: sites/shop/www/class/page_user.php:68
+#: sites/shop/www/class/page_public.php:57
+msgid "Home"
+msgstr "На главную"
+
+#: sites/shop/www/user/index.php:36 sites/shop/www/user/exit.php:29
+#: sites/shop/www/class/page_user.php:71
+#: sites/shop/www/class/page_user.php:175
+#: sites/shop/www/class/page_public.php:95
+msgid "Log out"
+msgstr "Выйти"
+
+#: sites/shop/www/user/index.php:42 sites/shop/www/class/addnews.php:24
+msgid "Add news"
+msgstr "Добавить новость"
+
+#: sites/shop/www/user/index.php:53
+msgid "Personal account. Hi "
+msgstr "Личный кабинет. Привет"
+
+#: sites/shop/www/user/index.php:54
+msgid "User account"
+msgstr "личный кабинет"
+
+#: sites/shop/www/user/showaccount.php:40
+msgid "File is correct and has been successfully uploaded."
+msgstr "Файл був загружений на сервер."
+
+#: sites/shop/www/user/showaccount.php:63
+msgid "Change avatar"
+msgstr "Поменять аватар"
+
+#: sites/shop/www/user/showaccount.php:64
+msgid "Upload"
+msgstr "Загрузить"
+
+#: sites/shop/www/user/showaccount.php:74
+msgid "name not set"
+msgstr "Имя не установлено"
+
+#: sites/shop/www/user/showaccount.php:75
+msgid "Name - "
+msgstr "имя - "
+
+#: sites/shop/www/user/showaccount.php:84
+msgid "Change name"
+msgstr "Поменять имя"
+
+#: sites/shop/www/user/showaccount.php:85
+#: sites/shop/www/user/showaccount.php:106
+#: sites/shop/www/user/showaccount.php:129
+msgid "Change"
+msgstr "Поменять"
+
+#: sites/shop/www/user/showaccount.php:95
+msgid "Surname not set"
+msgstr "Фамилия не установлена"
+
+#: sites/shop/www/user/showaccount.php:96
+msgid "Surname - "
+msgstr "Фамилия - "
+
+#: sites/shop/www/user/showaccount.php:105
+msgid "Change surname"
+msgstr "Поменять фамилию"
+
+#: sites/shop/www/user/showaccount.php:117
+msgid "email not set"
+msgstr "Email не установлен"
+
+#: sites/shop/www/user/showaccount.php:128
+msgid "Change email"
+msgstr "Поменять email"
+
+#: sites/shop/www/user/exit.php:11
+msgid "You went out of your personal account!"
+msgstr "Вы вышли из личного кабинета!"
+
+#: sites/shop/www/class/page_user.php:32
+#: sites/shop/www/class/page_public.php:31
+msgid "Administrative page"
+msgstr "Административные страницы"
+
+#: sites/shop/www/class/page_user.php:43
+#: sites/shop/www/class/page_public.php:42
+msgid "My first site using Object Oriented Programming"
+msgstr "Мой первый сайт использующий объе́ктно ориенти́рованное программи́рование"
+
+#: sites/shop/www/class/page_user.php:115
+#: sites/shop/www/class/page_user.php:150
+msgid "You enter the wrong login information."
+msgstr "Вы ввели неправильные регистрационные данные."
+
+#: sites/shop/www/class/page_user.php:164
+msgid "Login or password is entered incorrectly."
+msgstr "Логин или пароль введены неправильно."
+
+#: sites/shop/www/class/page_user.php:164
+msgid "<a href='../index.php'>"
+msgstr "<a href='../index.php'>"
+
+#: sites/shop/www/class/page_user.php:185
+#: sites/shop/www/class/page_public.php:105
+#, fuzzy
+msgid "Enter"
+msgstr "Вход"
+
+#: sites/shop/www/class/addnews.php:16 sites/shop/www/class/editnews.php:54
+msgid "Title news:"
+msgstr "Заголовок"
+
+#: sites/shop/www/class/addnews.php:17 sites/shop/www/class/editnews.php:57
+msgid "Language:"
+msgstr "Язык:"
+
+#: sites/shop/www/class/addnews.php:36 sites/shop/www/class/editnews.php:23
+msgid "Do not fill in the required fields"
+msgstr "Не заполните необходимые поля"
+
+#: sites/shop/www/class/addnews.php:48
+msgid "News has been added"
+msgstr "Новость была добавлена"
+
+#: sites/shop/www/class/page_public.php:65
+msgid "Users online- "
+msgstr "Пользователей онлайн-"
+
+#: sites/shop/www/class/page_public.php:66
+msgid "Users all- "
+msgstr "Всех- "
+
+#: sites/shop/www/class/editnews.php:37 sites/shop/www/class/editnews.php:99
+msgid "News has been edit"
+msgstr "Отредактировано"
+
+#: sites/shop/www/class/dataProc.php:79
+msgid "<br /><a href='index.php'>Home</a>"
+msgstr "<br /><a href='index.php'>Главная</a>"
+
+#: sites/shop/www/class/deletenews.php:31
+#, fuzzy
+msgid "News has been deleted"
+msgstr "Новость была добавлена"
+
+#~ msgid "Goodbye"
+#~ msgstr "Досвидание"
+
+#~ msgid "Hellow"
+#~ msgstr "Привет"
+
+#~ msgid "Log in"
+#~ msgstr "Войти"
+
+#~ msgid "PHP site"
+#~ msgstr "PHP сайт"
+
+#~ msgid "Edit news"
+#~ msgstr "Редактировать"
+
+#~ msgid "Delete news"
+#~ msgstr "Удалить"
+
+#~ msgid ""
+#~ "<b> <font color=red> $ loginV User not found or incorrect password </"
+#~ "font> </b>"
+#~ msgstr ""
+#~ "<b><font color=red>Пользователь $loginV не обнаружен, или неверный "
+#~ "пароль</font></b>"
+
+#~ msgid "Такий користувач вже присутній.<br>"
+#~ msgstr "Such a user is already present. <br>"
+
+#~ msgid "Регистрация успешна"
+#~ msgstr "Регистрация успешна"
