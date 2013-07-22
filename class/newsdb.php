@@ -46,7 +46,10 @@ class NewsDb{
         $lang = $obj->GetLang();
         $title = $obj->GetTitle();
         $text = $obj->GetText();
+<<<<<<< HEAD
         $author = $_SESSION['login'];
+=======
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
         //$id = db::getInstance()->lastInsertId()+5;
         
         
@@ -58,13 +61,20 @@ class NewsDb{
         $stmt->bindValue(':visible',$visible);
         $stmt->execute();
         
+<<<<<<< HEAD
         $sql = "INSERT INTO news (news_id,news_lang,news_title,news_text,news_author) VALUES(:id,:lang,:title,:text,:news_author)";
+=======
+        $sql = "INSERT INTO news (news_id,news_lang,news_title,news_text) VALUES(:id,:lang,:title,:text)";
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
         $stmt = db::getInstance()->prepare($sql);
         $stmt->bindValue(':id',db::getInstance()->lastInsertId());
         $stmt->bindValue(':lang',$lang);
         $stmt->bindValue(':title',$title);
         $stmt->bindValue(':text',$text);
+<<<<<<< HEAD
         $stmt->bindValue(':news_author',$author);
+=======
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
         $stmt->execute();
         
         

@@ -63,10 +63,15 @@ class Dataproc{
         }
     }
     public function register(){
+<<<<<<< HEAD
         
         $data = date("Ymd");
         try{
             $sql = "INSERT INTO users (login, password, email, name, city, status, data, role) VALUES (:login,:pass,:email, :name, :city, :status, :data, :role)";
+=======
+        try{
+            $sql = "INSERT INTO users (login, password, email, name, city, status) VALUES (:login,:pass,:email, :name, :city, :status)";
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
             $stmt = db::getInstance()->prepare($sql);
             $stmt->bindValue(':login',  $this->login);
             $stmt->bindValue(':pass',  $this->password);
@@ -74,8 +79,11 @@ class Dataproc{
             $stmt->bindValue(':name',  $this->name);
             $stmt->bindValue(':city',  $this->city);
             $stmt->bindValue(':status',  $this->status);
+<<<<<<< HEAD
             $stmt->bindValue(':data',  $data);
             $stmt->bindValue(':role',  3);
+=======
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
             $stmt->execute();
             //echo "Было затронуто строк ".$stmt->rowCount()."<br>";
             //echo "Id последней записи  ".db::getInstance()->lastInsertId()."<br>";

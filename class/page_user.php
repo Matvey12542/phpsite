@@ -23,6 +23,7 @@ class PageUser extends Dataproc {
         $this->Content();
         $this->Footer();
     }
+<<<<<<< HEAD
     
     public function AuthorizationUser()
     {
@@ -59,6 +60,8 @@ class PageUser extends Dataproc {
     }
     
     
+=======
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
     public function Header()
     {
         ?>
@@ -106,10 +109,13 @@ class PageUser extends Dataproc {
                     if (isset($_SESSION['login'])){
                         echo "<li><a href='../user/exit.php'>"._("Log out")."</a> </li>";
                         echo "<li><a href='../user/index.php'>"._("News")."</a> </li>";
+<<<<<<< HEAD
                                             
                         if (isset($_SESSION['role'])&&($_SESSION['role'] == 1)){
                             echo "<li><a href='../user/edituser.php'>"._("Edit users")."</a> </li>";
                         }                                       
+=======
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
                     }
                     
                     ?>
@@ -135,7 +141,41 @@ class PageUser extends Dataproc {
         <?php
     }
     
+<<<<<<< HEAD
     
+=======
+    public function AuthorizationUser()
+    {
+            if (!empty($_POST['user_login']) && !empty($_POST['user_pass']))
+            {    
+                $login = $this->CheckUserData($_POST['user_login']);
+                $password = $this->CheckUserData($_POST['user_pass']);
+
+                if(!empty($login)&&!empty($password)){
+                
+
+                    if($this->CheckLoginAndPasswd($login,$password))
+                    {$_SESSION['login'] = $login;}
+					
+
+                }
+                
+            else {
+                $_SESSION['mess'] = _("You enter the wrong login information.");
+                //header("Location:../user/index.php");
+                //echo _("You enter the wrong login information.");
+				
+            }
+            
+                
+           }  
+        else {
+            
+            $this->CheckUserLogin();
+        }
+        
+    }
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
     
     private function CheckLoginAndPasswd($login,$password)
     {
@@ -199,6 +239,7 @@ class PageUser extends Dataproc {
                     </form>
           <?php   }
     }
+<<<<<<< HEAD
     
     function setLastVisit($login){
         
@@ -230,6 +271,8 @@ class PageUser extends Dataproc {
         }
         return $role;
     }
+=======
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
 }
 
 ?>

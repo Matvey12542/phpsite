@@ -1,8 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Matvey\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2013-07-13 16:39+0300\n"
 "PO-Revision-Date: 2013-07-13 16:39+0300\n"
+=======
+"POT-Creation-Date: 2013-06-19 04:18+0300\n"
+"PO-Revision-Date: 2013-06-19 04:18+0300\n"
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
 "Last-Translator: Kolya <Matvey12542@rambler.ru>\n"
 "Language-Team: Matvey_team <Matvey12542@rambler.ru>\n"
 "Language: Russian\n"
@@ -11,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+<<<<<<< HEAD
 "X-Poedit-Basepath: ~\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: sites/shop/www\n"
@@ -260,15 +266,202 @@ msgid "<br /><a href='index.php'>Home</a>"
 msgstr "<br /><a href='index.php'>Главная</a>"
 
 #: sites/shop/www/class/deletenews.php:31
+=======
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /var/www/shop\n"
+
+#: /var/www/shop/registration_form.php:11
+msgid "User registration"
+msgstr "Регистрация пользователя"
+
+#: /var/www/shop/registration_form.php:25
+msgid "Registration"
+msgstr "Регистрация"
+
+#: /var/www/shop/registration_form.php:29 /var/www/shop/index.php:66
+msgid "login:"
+msgstr "Логин"
+
+#: /var/www/shop/registration_form.php:30 /var/www/shop/index.php:67
+msgid "Password:"
+msgstr "Пароль"
+
+#: /var/www/shop/registration_form.php:31
+msgid "Password_repeat:"
+msgstr "Повторите пароль"
+
+#: /var/www/shop/registration_form.php:32
+msgid "Email:"
+msgstr "Email:"
+
+#: /var/www/shop/registration_form.php:33
+msgid "Name:"
+msgstr "имя"
+
+#: /var/www/shop/registration_form.php:34
+msgid "City:"
+msgstr "Город:"
+
+#: /var/www/shop/registration_form.php:35
+msgid "Registration:"
+msgstr "Регистрация"
+
+#: /var/www/shop/index.php:19
+msgid "News"
+msgstr "Новости"
+
+#: /var/www/shop/index.php:31 /var/www/shop/class/page_public.php:52
+msgid "Administration"
+msgstr "Админ страница"
+
+#: /var/www/shop/index.php:32 /var/www/shop/class/page_public.php:53
+msgid "Registration_form"
+msgstr "Форма регистрации"
+
+#: /var/www/shop/index.php:46
+msgid "User online- "
+msgstr "Пользователь онлайн-"
+
+#: /var/www/shop/index.php:47
+msgid "All User- "
+msgstr "Всех-"
+
+#: /var/www/shop/index.php:59 /var/www/shop/user/index.php:23
+#: /var/www/shop/user/exit.php:27 /var/www/shop/class/page_user.php:56
+msgid "Log out"
+msgstr "Выйти"
+
+#: /var/www/shop/index.php:68
+msgid "Enter:"
+msgstr "Вход"
+
+#: /var/www/shop/index_s.php:23
+msgid "Such a user is already present. <br>"
+msgstr "Такой пользователь уже присутствует. <br>"
+
+#: /var/www/shop/index_s.php:35
+msgid "registration is successful"
+msgstr "Регистрация успешна"
+
+#: /var/www/shop/index_s.php:43
+msgid "<b> <font color=red> Login successful </font> </b>"
+msgstr "<b><font color=red>Вход удачен </font></b>"
+
+#: /var/www/shop/registration.php:28
+msgid "Passwords do not match"
+msgstr "Пароли не совпали"
+
+#: /var/www/shop/registration.php:29
+msgid "A username already exists"
+msgstr "Имя пользователя уже существует"
+
+#: /var/www/shop/registration.php:30 /var/www/shop/registration.php:31
+msgid "Not filled in all the fields"
+msgstr "Не заполнены все поля"
+
+#: /var/www/shop/registration.php:33
+msgid "<br /><a href=\"registration_form.php\">Registration form</a>"
+msgstr "<br /><a href=\"registration_form.php\">Форма регистрации</a>"
+
+#: /var/www/shop/user/index.php:20 /var/www/shop/user/exit.php:23
+#: /var/www/shop/class/page_user.php:53
+msgid "Home"
+msgstr "На главную"
+
+#: /var/www/shop/user/index.php:29 /var/www/shop/class/addnews.php:24
+msgid "Add news"
+msgstr "Добавить новость"
+
+#: /var/www/shop/user/index.php:40
+msgid "Personal account. Hi "
+msgstr "Личный кабинет. Привет"
+
+#: /var/www/shop/user/index.php:56
+msgid "Delete"
+msgstr "Удалить"
+
+#: /var/www/shop/user/exit.php:10
+msgid "You went out of your personal account!"
+msgstr "Вы вышли из личного кабинета!"
+
+#: /var/www/shop/user/exit.php:13
+msgid "Goodbye"
+msgstr "Досвидание"
+
+#: /var/www/shop/class/page_user.php:32 /var/www/shop/class/page_public.php:31
+msgid "Administrative page"
+msgstr "Административные страницы"
+
+#: /var/www/shop/class/page_user.php:40 /var/www/shop/class/page_public.php:39
+msgid "My first site using Object Oriented Programming"
+msgstr "Мой первый сайт использующий объе́ктно ориенти́рованное программи́рование"
+
+#: /var/www/shop/class/page_user.php:41 /var/www/shop/class/page_public.php:40
+msgid "Hellow"
+msgstr "Привет"
+
+#: /var/www/shop/class/page_user.php:101 /var/www/shop/class/page_user.php:131
+msgid "You enter the wrong login information."
+msgstr "Вы ввели неправильные регистрационные данные."
+
+#: /var/www/shop/class/page_user.php:142
+msgid "Login or password is entered incorrectly."
+msgstr "Логин или пароль введены неправильно."
+
+#: /var/www/shop/class/page_user.php:142
+msgid "<a href='../index.php'>"
+msgstr "<a href='../index.php'>"
+
+#: /var/www/shop/class/addnews.php:16 /var/www/shop/class/editnews.php:45
+msgid "Title news:"
+msgstr "Заголовок"
+
+#: /var/www/shop/class/addnews.php:17 /var/www/shop/class/editnews.php:48
+msgid "Language:"
+msgstr "Язык:"
+
+#: /var/www/shop/class/addnews.php:36 /var/www/shop/class/editnews.php:23
+msgid "Do not fill in the required fields"
+msgstr "Не заполните необходимые поля"
+
+#: /var/www/shop/class/addnews.php:48
+msgid "News has been added"
+msgstr "Новость была добавлена"
+
+#: /var/www/shop/class/page_public.php:58
+msgid "Users online- "
+msgstr "Пользователей онлайн-"
+
+#: /var/www/shop/class/page_public.php:59
+msgid "Users all- "
+msgstr "Всех- "
+
+#: /var/www/shop/class/deletenews.php:31
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
 #, fuzzy
 msgid "News has been deleted"
 msgstr "Новость была добавлена"
 
+<<<<<<< HEAD
 #~ msgid "Goodbye"
 #~ msgstr "Досвидание"
 
 #~ msgid "Hellow"
 #~ msgstr "Привет"
+=======
+#: /var/www/shop/class/editnews.php:68
+msgid "Edit"
+msgstr "Редактировать"
+
+#: /var/www/shop/class/editnews.php:90
+msgid "News has been edit"
+msgstr "Отредактировано"
+
+#: /var/www/shop/class/dataProc.php:79
+msgid "<br /><a href='index.php'>Home</a>"
+msgstr "<br /><a href='index.php'>Главная</a>"
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
 
 #~ msgid "Log in"
 #~ msgstr "Войти"

@@ -17,7 +17,10 @@ class index extends Page_public{
         
         echo '<div id="content">'; 
         echo '<h1 id="h1news">'._('News').'</h1>';
+<<<<<<< HEAD
         /*$this->ShowAvatar();*/
+=======
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
         $this->ShowNews($this->lang);
                           
                             
@@ -53,7 +56,29 @@ class index extends Page_public{
                     
         <?php
     }
+<<<<<<< HEAD
  
+=======
+   /* private function ShowLoginForm()
+    {
+        if (isset($_SESSION['login']))
+                  {
+                    echo '<a href="user/exit.php">'._("Log out").'</a>';
+                  }
+                  else
+                  {
+          ?>
+                    <form action="user/index.php" method="post">
+                            <table>
+                                <tr><td><?echo _('login:')?></td><td><input type="text" name="user_login"></td></tr>
+                                <tr><td><?echo _('Password:')?></td><td><input type="password" name="user_pass"></td></tr>
+                                <tr><td>&nbsp;</td><td><input type="submit" value="<?echo _('Enter')?>" name="login_form"></td></tr>
+                            </table>
+                    </form>
+          <?php   }
+    }*/
+    
+>>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
     public function ShowNews($lang){
         $news = new NewsDb();
         $result = $news->Select($lang);
