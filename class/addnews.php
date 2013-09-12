@@ -7,7 +7,7 @@ class AddNews extends PageUser{
     public $text;
     public $lang;
 
-<<<<<<< HEAD
+
     public function AuthorizationUser()
     {
         parent::AuthorizationUser();
@@ -41,8 +41,7 @@ class AddNews extends PageUser{
         }
         
     }
-=======
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
+
 
     public function Content() {
         echo '<div id="content">';
@@ -73,11 +72,9 @@ class AddNews extends PageUser{
                 exit();
             }
             
-<<<<<<< HEAD
-            $this->Add($this->lang, $this->title,  $this->text);
-=======
+
             $this->Add($this->lang,$this->title,  $this->text);
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
+
         }
         echo '</div>';
     }

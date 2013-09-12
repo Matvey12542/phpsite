@@ -31,11 +31,14 @@ class Page_public extends Dataproc{
                 <title><?  echo _('Administrative page');?></title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                 <link rel="stylesheet" href="style.css">
+                <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+                <!--<script src="main.js"></script> -->
             </head>
 
             <body>
                 <div id="wraper">
                     <div id="header">
+                        <div id="logo"><img src="../images/logo.png" alt="Слоник" width="100" height="100"></div>
                         <div id="form">
                             <?$this->ShowLoginForm();?>
                         </div>
@@ -81,7 +84,7 @@ class Page_public extends Dataproc{
     {
         ?> 
                 <div id="footer">
-                        &copy; 2013 ПП Matvey.
+                        &copy; 2013 Matvey.
                     </div>
                 </div>
             </body>

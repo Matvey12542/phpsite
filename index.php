@@ -17,10 +17,15 @@ class index extends Page_public{
         
         echo '<div id="content">'; 
         echo '<h1 id="h1news">'._('News').'</h1>';
-<<<<<<< HEAD
+
         /*$this->ShowAvatar();*/
-=======
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
+         if (isset($_SESSION['mess']))
+            {
+                echo "<br>"."<p id='mess'>".$_SESSION['mess']."</p>";
+                unset($_SESSION['mess']);
+            }
+
+
         $this->ShowNews($this->lang);
                           
                             
@@ -37,12 +42,7 @@ class index extends Page_public{
                     
                 </ul>
                 <?  
-                    if (isset($_SESSION['mess']))
-                    {
-                        echo "<br>".$_SESSION['mess'];
-                        unset($_SESSION['mess']);
-                    } 
-                
+                                  
                     //$this->ShowLoginForm();
                 
                     echo '<p>';
@@ -56,9 +56,7 @@ class index extends Page_public{
                     
         <?php
     }
-<<<<<<< HEAD
  
-=======
    /* private function ShowLoginForm()
     {
         if (isset($_SESSION['login']))
@@ -78,7 +76,7 @@ class index extends Page_public{
           <?php   }
     }*/
     
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
+
     public function ShowNews($lang){
         $news = new NewsDb();
         $result = $news->Select($lang);

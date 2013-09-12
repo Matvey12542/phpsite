@@ -32,6 +32,12 @@ class EditUser extends PageUser{
         
         $users = new UserDb();
         $allUser = $users->selectAllUser(); 
+        
+        if(isset($_GET['id'])){
+            $users ->deleteuser($_GET['id']);
+        }
+        
+        
                        
         /*echo '<pre>';
         var_dump($allUser);
@@ -74,10 +80,9 @@ class EditUser extends PageUser{
              <option <? if($v['role']== 4){echo 'selected';}?> value="4">Blocked</option>
             </select>
             <input type="submit" value="Send"></p>
-           </form>
+            </form>
 <?
             echo "</td>";
-            
             echo "</tr>";
             
         }

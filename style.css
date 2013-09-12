@@ -4,6 +4,12 @@ root {
 }
 body {
     /*width: 1024px; margin: 0px auto;*/
+    /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(grey));*/
+    /*background-image: -moz-linear-gradient(#f2f2f2, grey);*/
+    /*background-image: -o-linear-gradient(#f2f2f2, grey);*/
+    /*background-image: linear-gradient(#f2f2f2, grey);*/
+    background-image: url(images/fon.jpg);
+
     font-family: Verdana;
 }
  
@@ -18,6 +24,7 @@ header.mainH {
 #wraper{
     width: 1024px; 
     margin: 0px auto;
+    background-color: #ffffff;
     /*padding: 5px;*/
     /*outline: 2px solid black;*/
     
@@ -32,6 +39,7 @@ header.mainH {
     text-align: center;
     /*outline: 1px solid black;*/
     border: 2px solid #215a91;
+    padding: 10px;
     
     -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
     -webkit-box-shadow: 0 3px 5px 0 #AA4400; -moz-box-shadow: 0 3px 5px 0 #AA4400;
@@ -41,6 +49,7 @@ header.mainH {
        
 }
 #lang{
+        margin-top: 0;
 	text-align: right;
 	margin-right: 30px;
 }
@@ -72,9 +81,18 @@ header.mainH {
 }
 #footer{
     /*height: 100px;*/
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
     clear: left;
-    display: none;
+    text-align: center;
+    /*display: none;*/
+    min-height: 50px;
+    /*outline: 1px solid black;*/
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    
+    border: 2px solid #215a91;
+    -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
 }
 
 input{
@@ -100,9 +118,9 @@ input{
 #form{
     
     width: 550px;
-    margin-left: 480px;
+    margin-left: 460px;
     margin-top: 10px;
-    
+    /*text-align: right;    */
 }
 #form p{
     float: left;
@@ -168,4 +186,26 @@ a:hover{
 }
 .delete{
     color: red;
+    float: right;
+}
+#mess{
+    color: #ac0202;
+    font-weight: bold;
+}
+.hedadm{
+    text-align: center;
+}
+#account{
+    float: right;    
+}
+#hi{
+     font: 12px verdana;
+}
+#logo{
+    /*background-image: url(../images/logo.png);
+    height: 100px;
+    width: 150px;*/
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left;
 }

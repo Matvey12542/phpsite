@@ -16,15 +16,18 @@ class Showaccount extends PageUser{
         $result= $user->selectAll($_SESSION['login']);
         
         
-         echo "<p id='edacc'><a href='editaccount.php'>"._("Edit account")."</a></p>";
-         echo "<p id='delacc'><a href='deleteaccount.php'>"._("Delete account")."</a></p>";
-        /*echo '<pre>';
-        var_dump($result['img']);
-        echo '</pre>';*/
-        $img = $result['img'];
-        if ($img == '')
-        {
-            $img = "def.png";
+        echo "<p id='edacc'><a href='editaccount.php'>"._("Edit account")."</a></p>";
+        echo "<p id='delacc'><a href='deleteaccount.php'>"._("Delete account")."</a></p>";
+       
+        echo '<pre>';
+        var_dump($result);
+        var_dump($_SESSION['login']);
+        echo '</pre>';
+        if (!empty($result['img'])) {
+          $img = $result['img'];
+        }
+        else {
+           $img = "def.png";
         }
         echo "<img src='../images/avatar/{$img}' alt='avatar'>";    //avatar
         

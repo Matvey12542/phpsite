@@ -7,7 +7,6 @@ class Edit extends PageUser{
     public $text;
     public $lang;
     public $id='';
-<<<<<<< HEAD
     
     public function AuthorizationUser()
     {
@@ -70,9 +69,6 @@ class Edit extends PageUser{
         }
         
     }
-=======
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
-
 
     public function Content() {
         echo '<div id="content">';
@@ -109,9 +105,7 @@ class Edit extends PageUser{
         }
         
         $res = $this->SelectNews($id);
-        
-        
-        
+           
        ?>
 
 <form action="editnews.php" method="post">

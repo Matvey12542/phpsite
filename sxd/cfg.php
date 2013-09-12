@@ -10,13 +10,8 @@ $CFG = array (
   'globstat' => 0,
   'my_host' => 'localhost',
   'my_port' => 3306,
-<<<<<<< HEAD
   'my_user' => 'kolya',
   'my_pass' => '751392',
-=======
-  'my_user' => 'root',
-  'my_pass' => 'root',
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
   'my_comp' => 0,
   'my_db' => '',
   'auth' => 'mysql cfg',

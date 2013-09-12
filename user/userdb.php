@@ -33,7 +33,7 @@ class UserDb{
         try{
             $sql = "SELECT * FROM users WHERE login=:login";
             $stmt = db::getInstance()->prepare($sql);
-            $stmt->bindValue(':login',$login);
+            $stmt->bindValue(':login', $login);
             $stmt->execute();
             $users = $stmt->fetch(PDO::FETCH_ASSOC);
             
@@ -112,6 +112,18 @@ class UserDb{
             $sql = "DELETE FROM users WHERE login=:login";
             $stmt = db::getInstance()->prepare($sql);
             $stmt->bindValue(':login',$login);
+            $stmt->execute();
+            
+        }catch(PDOException $e){
+            echo $e->getMessage();}
+    }
+    
+    function deleteuser($id){
+        try{
+            
+            $sql = "DELETE FROM users WHERE id=:id";
+            $stmt = db::getInstance()->prepare($sql);
+            $stmt->bindValue(':id',$id);
             $stmt->execute();
             
         }catch(PDOException $e){

@@ -92,6 +92,11 @@ class Editaccount extends PageUser{
     function showSurname(){
         $user = new UserDb();
         $users = $user -> selectAll($_SESSION['login']);
+        
+        /*echo '<pre>';
+        var_dump($users);
+        echo '</pre>';*/
+        
         if ($users['surname'] == ''){
             echo _('Surname not set');
         }else {echo _('Surname - ').$users['surname'];}

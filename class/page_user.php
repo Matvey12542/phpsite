@@ -23,7 +23,7 @@ class PageUser extends Dataproc {
         $this->Content();
         $this->Footer();
     }
-<<<<<<< HEAD
+
     
     public function AuthorizationUser()
     {
@@ -60,8 +60,7 @@ class PageUser extends Dataproc {
     }
     
     
-=======
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
+
     public function Header()
     {
         ?>
@@ -71,6 +70,8 @@ class PageUser extends Dataproc {
                 <title><?  echo _('Administrative page');?></title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                 <link rel="stylesheet" href="../style.css">
+                <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+                
             </head>
 
             <body>
@@ -98,7 +99,7 @@ class PageUser extends Dataproc {
                 <?
                 if (isset($_SESSION['mess']))
                     {
-                        echo "<br>".$_SESSION['mess'];
+                        echo "<br>"."<p id='mess'>".$_SESSION['mess']."</p>";
                         unset($_SESSION['mess']);
                     } 
                 
@@ -109,13 +110,12 @@ class PageUser extends Dataproc {
                     if (isset($_SESSION['login'])){
                         echo "<li><a href='../user/exit.php'>"._("Log out")."</a> </li>";
                         echo "<li><a href='../user/index.php'>"._("News")."</a> </li>";
-<<<<<<< HEAD
+
                                             
                         if (isset($_SESSION['role'])&&($_SESSION['role'] == 1)){
                             echo "<li><a href='../user/edituser.php'>"._("Edit users")."</a> </li>";
                         }                                       
-=======
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
+
                     }
                     
                     ?>
@@ -133,18 +133,15 @@ class PageUser extends Dataproc {
     {
         ?> 
                 <div id="footer">
-                        &copy; 2013 ПП Matvey.
+                        &copy; 2013 Matvey.
                     </div>
                 </div>
             </body>
         </html>
         <?php
     }
-    
-<<<<<<< HEAD
-    
-=======
-    public function AuthorizationUser()
+
+/*    public function AuthorizationUser()
     {
             if (!empty($_POST['user_login']) && !empty($_POST['user_pass']))
             {    
@@ -174,9 +171,8 @@ class PageUser extends Dataproc {
             $this->CheckUserLogin();
         }
         
-    }
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
-    
+    }*/
+   
     private function CheckLoginAndPasswd($login,$password)
     {
         
@@ -184,7 +180,7 @@ class PageUser extends Dataproc {
         $sql = "SELECT * FROM users WHERE login=:login AND password=:password";
         $stmt = db::getInstance()->prepare($sql);
         $stmt->bindValue(':login',$login);
-        $stmt->bindValue(':password',$password);
+        $stmt->bindValue(':password', md5($password));
         $stmt->execute();
 		$count = $stmt->rowCount();
         $user=$stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -239,7 +235,6 @@ class PageUser extends Dataproc {
                     </form>
           <?php   }
     }
-<<<<<<< HEAD
     
     function setLastVisit($login){
         
@@ -266,13 +261,12 @@ class PageUser extends Dataproc {
             $rez = $stmt->fetch(PDO::FETCH_ASSOC);
             $role = $rez['role'];
             
-        }  catch (PDOException $e){
+        }catch (PDOException $e){
         echo $e->getMessage();
         }
         return $role;
     }
-=======
->>>>>>> 33b27a05a0cf4b659b26183e6eef2f2a5fd9ff39
+
 }
 
 ?>
